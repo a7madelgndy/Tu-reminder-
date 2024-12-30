@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>top-level-items</key>
+	<array>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>home-directory</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>Library/Developer/Xcode/DerivedData/Tu_reminder-becmjmrcszvugnevesceixhoahfw/Build/Intermediates.noindex/Tu reminder.build/Debug-iphonesimulator/Tu reminder.build/DerivedSources/CoreDataGenerated/RemindersModel/Entity+CoreDataClass.swift</string>
+					</dict>
+				</dict>
+				<key>type</key>
+				<string>DVTDocumentLocation</string>
+			</dict>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>0</string>
+					<key>EndingLineNumber</key>
+					<string>19</string>
+					<key>StartingColumnNumber</key>
+					<string>0</string>
+					<key>StartingLineNumber</key>
+					<string>19</string>
+					<key>Timestamp</key>
+					<string>757282931.750169</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>home-directory</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>Library/Developer/Xcode/DerivedData/Tu_reminder-becmjmrcszvugnevesceixhoahfw/Build/Intermediates.noindex/Tu reminder.build/Debug-iphonesimulator/Tu reminder.build/DerivedSources/CoreDataGenerated/RemindersModel/Entey+CoreDataProperties.swift</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>    @NSManaged public var color: UIColor?
+</string>
+				<key>leading</key>
+				<string>    }
+
+</string>
+				<key>trailing</key>
+				<string>    @NSManaged public var name: String?
+
+}
+</string>
+			</dict>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+	</array>
+</dict>
+</plist>

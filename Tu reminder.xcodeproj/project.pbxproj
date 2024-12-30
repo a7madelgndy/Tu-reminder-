@@ -11,6 +11,10 @@
 		15BB1F5E2D22196B0038EA2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB1F5D2D22196B0038EA2B /* ContentView.swift */; };
 		15BB1F602D2219700038EA2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15BB1F5F2D2219700038EA2B /* Assets.xcassets */; };
 		15BB1F632D2219700038EA2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15BB1F622D2219700038EA2B /* Preview Assets.xcassets */; };
+		15BB1F6B2D2219C40038EA2B /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB1F6A2D2219C40038EA2B /* CoreDataProvider.swift */; };
+		15BB1F6E2D221B050038EA2B /* RemindersModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 15BB1F6C2D221B050038EA2B /* RemindersModel.xcdatamodeld */; };
+		15BB1F712D2339BB0038EA2B /* Mylist+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB1F702D2339BB0038EA2B /* Mylist+CoreDataClass.swift */; };
+		15BB1F732D233A150038EA2B /* Mylist+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB1F722D233A150038EA2B /* Mylist+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		15BB1F5D2D22196B0038EA2B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		15BB1F5F2D2219700038EA2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15BB1F622D2219700038EA2B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		15BB1F6A2D2219C40038EA2B /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
+		15BB1F6D2D221B050038EA2B /* RemindersModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RemindersModel.xcdatamodel; sourceTree = "<group>"; };
+		15BB1F702D2339BB0038EA2B /* Mylist+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mylist+CoreDataClass.swift"; sourceTree = "<group>"; };
+		15BB1F722D233A150038EA2B /* Mylist+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mylist+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +59,13 @@
 		15BB1F5A2D22196B0038EA2B /* Tu reminder */ = {
 			isa = PBXGroup;
 			children = (
+				15BB1F6F2D23370D0038EA2B /* Models */,
+				15BB1F692D22199B0038EA2B /* Providers */,
 				15BB1F5B2D22196B0038EA2B /* Tu_reminderApp.swift */,
 				15BB1F5D2D22196B0038EA2B /* ContentView.swift */,
 				15BB1F5F2D2219700038EA2B /* Assets.xcassets */,
 				15BB1F612D2219700038EA2B /* Preview Content */,
+				15BB1F6C2D221B050038EA2B /* RemindersModel.xcdatamodeld */,
 			);
 			path = "Tu reminder";
 			sourceTree = "<group>";
@@ -65,6 +76,23 @@
 				15BB1F622D2219700038EA2B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		15BB1F692D22199B0038EA2B /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				15BB1F6A2D2219C40038EA2B /* CoreDataProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		15BB1F6F2D23370D0038EA2B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				15BB1F702D2339BB0038EA2B /* Mylist+CoreDataClass.swift */,
+				15BB1F722D233A150038EA2B /* Mylist+CoreDataProperties.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +166,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				15BB1F5E2D22196B0038EA2B /* ContentView.swift in Sources */,
+				15BB1F6E2D221B050038EA2B /* RemindersModel.xcdatamodeld in Sources */,
+				15BB1F712D2339BB0038EA2B /* Mylist+CoreDataClass.swift in Sources */,
 				15BB1F5C2D22196B0038EA2B /* Tu_reminderApp.swift in Sources */,
+				15BB1F6B2D2219C40038EA2B /* CoreDataProvider.swift in Sources */,
+				15BB1F732D233A150038EA2B /* Mylist+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +376,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		15BB1F6C2D221B050038EA2B /* RemindersModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				15BB1F6D2D221B050038EA2B /* RemindersModel.xcdatamodel */,
+			);
+			currentVersion = 15BB1F6D2D221B050038EA2B /* RemindersModel.xcdatamodel */;
+			name = RemindersModel.xcdatamodeld;
+			path = "/Users/ahmedelgndy/Desktop/Tu reminder/Tu reminder/RemindersModel.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 15BB1F502D22196B0038EA2B /* Project object */;
 }
