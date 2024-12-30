@@ -11,7 +11,7 @@ import SwiftUI
 struct Tu_reminderApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }
