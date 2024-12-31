@@ -26,9 +26,19 @@ public class ReminderService {
     }
     //MARK: Save  Reminder
     static func saveReminderToMylist(list : MyList ,ReminderTitle : String ) throws {
-        
         let reminder = Reminder(context: viewContext)
         reminder.title = ReminderTitle
         list.addToReminders(reminder)
+    }
+    
+    //MARK: Reminder connected to a specific  list
+    
+    static func getRemindersBylist(mylist: MyList)-> NSFetchRequest<Reminder> {
+        let request = Reminder.fetchRequest()
+        request.sortDescriptors = []
+        request.predicate = NSPredicate(format: "list = %@ AND isCompleted = false" , mylist
+        )
+        print(request)
+        return request
     }
 }

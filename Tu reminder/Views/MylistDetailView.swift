@@ -11,17 +11,28 @@ struct MylistDetailView: View {
     //MARK: PROPERTIES
     let mylist : MyList
     @State private var openAddReminder: Bool = false
-    @State private var title : String = " "
+    @State private var title : String = ""
+    
+    @FetchRequest(sortDescriptors: [])
+    private var reminderResults: FetchedResults<Reminder>
     
     private var isFormValid: Bool {
         !title.isEmpty
     }
     
+    init(list : MyList){
+        mylist = list
+        let request = ReminderService.getRemindersBylist(mylist: mylist)
+        _reminderResults = FetchRequest(fetchRequest: request)
+    }
     //MARK: BODY
     var body: some View {
-        //Display list OF Reminders
         VStack {
+            ForEach(reminderResults) {r in
+                Text(r.title ?? "this")
+            }
             HStack {
+             
                 Image(systemName: "plus.circle.fill")
                 Button("New Reminder") {
                     openAddReminder.toggle()
@@ -51,5 +62,5 @@ struct MylistDetailView: View {
 }
 
 #Preview {
-    MylistDetailView(mylist: PreviewData.myList)
+    MylistDetailView(list: PreviewData.myList)
 }

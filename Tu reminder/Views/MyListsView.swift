@@ -29,7 +29,7 @@ struct MyListsView: View {
    
             }//ForEach
             .navigationDestination(for: MyList.self) { list in
-                MylistDetailView(mylist:list )
+                MylistDetailView(list:list )
                     .navigationTitle(list.name)
             }
         }

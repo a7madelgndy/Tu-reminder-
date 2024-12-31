@@ -117,6 +117,7 @@
 		15BB1F742D233D480038EA2B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				15BB1F8B2D24B99F0038EA2B /* New Group */,
 				15BB1F5D2D22196B0038EA2B /* HomeView.swift */,
 				15BB1F772D233FD90038EA2B /* ColorPickerView.swift */,
 				15BB1F792D234D7D0038EA2B /* AddNewListView.swift */,
@@ -141,6 +142,13 @@
 				15BB1F7F2D23605D0038EA2B /* UIColorTransFormer.swift */,
 			);
 			path = Transformers;
+			sourceTree = "<group>";
+		};
+		15BB1F8B2D24B99F0038EA2B /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
