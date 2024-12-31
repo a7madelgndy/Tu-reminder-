@@ -11,8 +11,11 @@ import CoreData
 class CoreDataProvider {
     
     static let shared = CoreDataProvider()
-    private let persistentContainer: NSPersistentContainer
+    public let persistentContainer: NSPersistentContainer
     private init () {
+        //Register TransFormers
+        ValueTransformer.setValueTransformer(UIColorTransFormer(), forName: NSValueTransformerName("UIColorTransFormer"))
+        
         persistentContainer = NSPersistentContainer(name: "ReminderModel")
         persistentContainer.loadPersistentStores {
            description , error in

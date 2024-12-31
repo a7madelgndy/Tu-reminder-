@@ -12,6 +12,7 @@ struct Tu_reminderApp: App {
     var body: some Scene {
         WindowGroup {
             HomeView()
+                .environment(\.managedObjectContext , CoreDataProvider.shared.persistentContainer.viewContext)
         }
     }
 }

@@ -21,8 +21,13 @@ struct HomeView: View {
                 }
                 .sheet(isPresented: $isAddNewopen , content: {
                     NavigationView {
-                        AddNewListView { title, _ in
-                            print(title)
+                        //MARK: save to core data
+                        AddNewListView { title, color in
+                            do {
+                                try ReminderService.saveMyList(name: title, color: color)
+                            }catch {
+                                print(error.localizedDescription)
+                            }
                         }
                     }
                 })
