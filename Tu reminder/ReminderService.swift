@@ -17,11 +17,18 @@ public class ReminderService {
     static func save() throws {
         try viewContext.save()
     }
-    //MARK: Save to core Data
+    //MARK: Save  list
     static func saveMyList(name: String , color: UIColor) throws {
         let mylist = MyList(context: viewContext)
         mylist.name = name
         mylist.color = color
         try save()
+    }
+    //MARK: Save  Reminder
+    static func saveReminderToMylist(list : MyList ,ReminderTitle : String ) throws {
+        
+        let reminder = Reminder(context: viewContext)
+        reminder.title = ReminderTitle
+        list.addToReminders(reminder)
     }
 }
