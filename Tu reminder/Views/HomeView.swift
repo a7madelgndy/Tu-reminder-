@@ -9,11 +9,17 @@ import SwiftUI
 
 struct HomeView: View {
     //MARK: PROPERTIES
+    @FetchRequest(sortDescriptors: [])
+    private var myListsReguest : FetchedResults<MyList>
+    
     @State private var isAddNewopen = false
     //MARK: BODY
     var body: some View {
         NavigationStack{
             VStack {
+                //1- lists View
+                MyListsView(lists: myListsReguest)
+                //2- add new list 
                 Button {
                     isAddNewopen.toggle()
                 } label: {
@@ -41,5 +47,6 @@ struct HomeView: View {
 #Preview {
     NavigationStack {
         HomeView()
+            .environment(\.managedObjectContext , CoreDataProvider.shared.persistentContainer.viewContext)
     }
 }

@@ -46,7 +46,7 @@ struct AddNewListView: View {
         }
         .toolbar {
             ToolbarItem(placement: .principal) {
-                Text("Close")
+                Text("Add new list")
             }
         }
         .toolbar {

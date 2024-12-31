@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-class UIColorTransFormer : ValueTransformer {
+class UIColorTransformer : ValueTransformer {
     
     //serialize UIColor into Data.
     override func transformedValue(_ value: Any?) -> Any? {

@@ -19,6 +19,9 @@
 		15BB1F7A2D234D7D0038EA2B /* AddNewListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB1F792D234D7D0038EA2B /* AddNewListView.swift */; };
 		15BB1F7D2D2358C40038EA2B /* ReminderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB1F7C2D2358C40038EA2B /* ReminderService.swift */; };
 		15BB1F802D23605D0038EA2B /* UIColorTransFormer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB1F7F2D23605D0038EA2B /* UIColorTransFormer.swift */; };
+		15BB1F822D244C100038EA2B /* MyListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB1F812D244C100038EA2B /* MyListsView.swift */; };
+		15BB1F852D244E120038EA2B /* MyListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB1F842D244E120038EA2B /* MyListCellView.swift */; };
+		15BB1F872D244E510038EA2B /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB1F862D244E510038EA2B /* PreviewData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		15BB1F792D234D7D0038EA2B /* AddNewListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewListView.swift; sourceTree = "<group>"; };
 		15BB1F7C2D2358C40038EA2B /* ReminderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderService.swift; sourceTree = "<group>"; };
 		15BB1F7F2D23605D0038EA2B /* UIColorTransFormer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTransFormer.swift; sourceTree = "<group>"; };
+		15BB1F812D244C100038EA2B /* MyListsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListsView.swift; sourceTree = "<group>"; };
+		15BB1F842D244E120038EA2B /* MyListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListCellView.swift; sourceTree = "<group>"; };
+		15BB1F862D244E510038EA2B /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				15BB1F622D2219700038EA2B /* Preview Assets.xcassets */,
+				15BB1F862D244E510038EA2B /* PreviewData.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -111,6 +118,8 @@
 				15BB1F5D2D22196B0038EA2B /* HomeView.swift */,
 				15BB1F772D233FD90038EA2B /* ColorPickerView.swift */,
 				15BB1F792D234D7D0038EA2B /* AddNewListView.swift */,
+				15BB1F812D244C100038EA2B /* MyListsView.swift */,
+				15BB1F842D244E120038EA2B /* MyListCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,10 +210,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15BB1F852D244E120038EA2B /* MyListCellView.swift in Sources */,
 				15BB1F5E2D22196B0038EA2B /* HomeView.swift in Sources */,
 				15BB1F802D23605D0038EA2B /* UIColorTransFormer.swift in Sources */,
 				15BB1F7A2D234D7D0038EA2B /* AddNewListView.swift in Sources */,
+				15BB1F872D244E510038EA2B /* PreviewData.swift in Sources */,
 				15BB1F6E2D221B050038EA2B /* RemindersModel.xcdatamodeld in Sources */,
+				15BB1F822D244C100038EA2B /* MyListsView.swift in Sources */,
 				15BB1F712D2339BB0038EA2B /* Mylist+CoreDataClass.swift in Sources */,
 				15BB1F782D233FD90038EA2B /* ColorPickerView.swift in Sources */,
 				15BB1F5C2D22196B0038EA2B /* Tu_reminderApp.swift in Sources */,

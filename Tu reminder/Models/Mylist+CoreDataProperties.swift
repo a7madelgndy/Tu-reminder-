@@ -21,6 +21,10 @@ extension MyList {
     @NSManaged public var name: String
 
 }
+extension MyList:Identifiable {
+
+
+}
 
 
 
