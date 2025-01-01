@@ -45,8 +45,7 @@ struct HomeView: View {
 }
 
 #Preview {
-    NavigationStack {
-        HomeView()
-            .environment(\.managedObjectContext , CoreDataProvider.shared.persistentContainer.viewContext)
-    }
+    HomeView()
+        .environment(\.managedObjectContext , CoreDataProvider.shared.persistentContainer.viewContext)
+    
 }

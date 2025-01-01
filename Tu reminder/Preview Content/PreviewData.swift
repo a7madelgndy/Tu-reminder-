@@ -15,8 +15,7 @@ class PreviewData {
         let viewContext = CoreDataProvider.shared.persistentContainer.viewContext
         
         let request = MyList.fetchRequest()
-        
-        return (try? viewContext.fetch(request).first) ?? MyList()
+        return (try? viewContext.fetch(request).last) ?? MyList()
     }
     
 }

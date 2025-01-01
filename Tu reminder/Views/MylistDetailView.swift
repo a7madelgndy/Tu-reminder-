@@ -28,9 +28,7 @@ struct MylistDetailView: View {
     //MARK: BODY
     var body: some View {
         VStack {
-            ForEach(reminderResults) {r in
-                Text(r.title ?? "this")
-            }
+            ReminderListView(reminders: reminderResults)
             HStack {
              
                 Image(systemName: "plus.circle.fill")
@@ -61,6 +59,9 @@ struct MylistDetailView: View {
     }
 }
 
-#Preview {
-    MylistDetailView(list: PreviewData.myList)
+struct MyListDetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        MylistDetailView(list: PreviewData.myList)
+    }
 }
+
