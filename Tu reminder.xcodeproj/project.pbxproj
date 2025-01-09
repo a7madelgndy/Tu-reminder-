@@ -24,6 +24,8 @@
 		15BB1F872D244E510038EA2B /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB1F862D244E510038EA2B /* PreviewData.swift */; };
 		15BB1F8A2D245E2E0038EA2B /* MylistDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB1F892D245E2D0038EA2B /* MylistDetailView.swift */; };
 		15BB1F8D2D24BCA10038EA2B /* ReminderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB1F8C2D24BCA10038EA2B /* ReminderListView.swift */; };
+		15BB1F8F2D24DD2C0038EA2B /* ReminderCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB1F8E2D24DD2C0038EA2B /* ReminderCellView.swift */; };
+		15BB1F932D2FCF550038EA2B /* Data + Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BB1F922D2FCF550038EA2B /* Data + Extentions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		15BB1F862D244E510038EA2B /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		15BB1F892D245E2D0038EA2B /* MylistDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MylistDetailView.swift; sourceTree = "<group>"; };
 		15BB1F8C2D24BCA10038EA2B /* ReminderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListView.swift; sourceTree = "<group>"; };
+		15BB1F8E2D24DD2C0038EA2B /* ReminderCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCellView.swift; sourceTree = "<group>"; };
+		15BB1F922D2FCF550038EA2B /* Data + Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data + Extentions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		15BB1F5A2D22196B0038EA2B /* Tu reminder */ = {
 			isa = PBXGroup;
 			children = (
+				15BB1F902D2FCF1E0038EA2B /* Utilities  */,
 				15BB1F7E2D23602E0038EA2B /* Transformers */,
 				15BB1F7B2D23589E0038EA2B /* Services */,
 				15BB1F742D233D480038EA2B /* Views */,
@@ -126,6 +131,7 @@
 				15BB1F792D234D7D0038EA2B /* AddNewListView.swift */,
 				15BB1F842D244E120038EA2B /* MyListCellView.swift */,
 				15BB1F892D245E2D0038EA2B /* MylistDetailView.swift */,
+				15BB1F8E2D24DD2C0038EA2B /* ReminderCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -144,6 +150,22 @@
 				15BB1F7F2D23605D0038EA2B /* UIColorTransFormer.swift */,
 			);
 			path = Transformers;
+			sourceTree = "<group>";
+		};
+		15BB1F902D2FCF1E0038EA2B /* Utilities  */ = {
+			isa = PBXGroup;
+			children = (
+				15BB1F912D2FCF330038EA2B /* Extentions  */,
+			);
+			path = "Utilities ";
+			sourceTree = "<group>";
+		};
+		15BB1F912D2FCF330038EA2B /* Extentions  */ = {
+			isa = PBXGroup;
+			children = (
+				15BB1F922D2FCF550038EA2B /* Data + Extentions.swift */,
+			);
+			path = "Extentions ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +240,7 @@
 			files = (
 				15BB1F852D244E120038EA2B /* MyListCellView.swift in Sources */,
 				15BB1F8A2D245E2E0038EA2B /* MylistDetailView.swift in Sources */,
+				15BB1F8F2D24DD2C0038EA2B /* ReminderCellView.swift in Sources */,
 				15BB1F5E2D22196B0038EA2B /* HomeView.swift in Sources */,
 				15BB1F802D23605D0038EA2B /* UIColorTransFormer.swift in Sources */,
 				15BB1F7A2D234D7D0038EA2B /* AddNewListView.swift in Sources */,
@@ -229,6 +252,7 @@
 				15BB1F5C2D22196B0038EA2B /* Tu_reminderApp.swift in Sources */,
 				15BB1F6B2D2219C40038EA2B /* CoreDataProvider.swift in Sources */,
 				15BB1F8D2D24BCA10038EA2B /* ReminderListView.swift in Sources */,
+				15BB1F932D2FCF550038EA2B /* Data + Extentions.swift in Sources */,
 				15BB1F732D233A150038EA2B /* Mylist+CoreDataProperties.swift in Sources */,
 				15BB1F7D2D2358C40038EA2B /* ReminderService.swift in Sources */,
 			);

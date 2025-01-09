@@ -11,6 +11,13 @@ import CoreData
 
 class PreviewData {
     
+    static var reminder : Reminder {
+        let viewContext = CoreDataProvider.shared.persistentContainer.viewContext
+        
+        let request = Reminder.fetchRequest()
+        return (try? viewContext.fetch(request).last) ?? Reminder(context: viewContext)
+    }
+    
     static var myList : MyList {
         let viewContext = CoreDataProvider.shared.persistentContainer.viewContext
         
